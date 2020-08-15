@@ -50,6 +50,13 @@ $soft-red: #ff6961
 .d-none
   display: none
 
+.draggable
+  width: 150px
+  height: 150px
+  background-color: $soft-blue
+  touch-action: none
+  user-select: none
+
 .container
   max-width: 375px
   margin: 0 auto
@@ -69,6 +76,8 @@ $soft-red: #ff6961
     border: none
     cursor: pointer
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+    touch-action: none
+    user-select: none
 
     .btn__strip
       font-size: 8px
