@@ -4,25 +4,32 @@
 
 .container {
   max-width: 375px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #000000;
+  height: 100vh; }
   .container .btn {
-    background-color: #96b0bc;
-    padding: 5px;
+    background-color: white;
+    padding: 15px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    width: 110px;
+    width: auto;
     height: 40px;
     border: none;
     cursor: pointer; }
     .container .btn .btn__strip {
-      font-size: 8px;
-      margin: 0 5px; }
-    .container .btn .btn__score span {
-      font-size: 16px; }
-      .container .btn .btn__score span.win {
-        color: #000000;
-        font-weight: bold; }
-      .container .btn .btn__score span.lose {
-        color: #49545a; }
+      font-size: 8px; }
+    .container .btn .btn__score {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .container .btn .btn__score img {
+        height: 25px; }
+      .container .btn .btn__score span {
+        font-size: 16px;
+        margin: 0 5px; }
+        .container .btn .btn__score span.win {
+          color: #000000; }
+        .container .btn .btn__score span.lose {
+          color: #bdbdbd; }
