@@ -5,7 +5,7 @@
 .container {
   max-width: 375px;
   margin: 0 auto;
-  background-color: #000000;
+  background-color: #151515;
   height: 100vh; }
   .container .btn {
     background-color: white;
@@ -30,6 +30,6 @@
         font-size: 16px;
         margin: 0 5px; }
         .container .btn .btn__score span.win {
-          color: #000000; }
+          color: #151515; }
         .container .btn .btn__score span.lose {
           color: #bdbdbd; }
