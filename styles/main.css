@@ -39,6 +39,9 @@
 .live {
   color: #ff6961; }
 
+.d-none {
+  display: none; }
+
 .container {
   max-width: 375px;
   margin: 0 auto;
