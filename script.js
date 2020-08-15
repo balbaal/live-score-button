@@ -17,19 +17,20 @@ interact(".draggable").draggable({
   },
 });
 
-const toggleButton = () => {
-  $(".card").toggle();
-  $(".btn").toggle();
-  $(".btn-close").toggle();
-};
-
 $(".btn").click(function (e) {
   if (!isMoved) {
-    toggleButton();
+    $(".btn").addClass("fade-out").removeClass("fade-in");
+    $(".btn-close")
+      .removeClass("slide-out-bottom d-none")
+      .addClass("slide-in-bottom");
+
+    $(".card").removeClass("d-none slide-out-top").addClass("slide-in-top");
   }
   isMoved = false;
 });
 
 $(".btn-close").click(function () {
-  toggleButton();
+  $(".btn").addClass("fade-in").removeClass("fade-out");
+  $(".btn-close").addClass("slide-out-bottom").removeClass("slide-in-bottom");
+  $(".card").addClass("slide-out-top").removeClass("slide-in-top");
 });
