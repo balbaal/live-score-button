@@ -63,6 +63,23 @@ $soft-red: #ff6961
   background-color: $soft-white
   height: 100vh
   padding: 10px
+  position: relative
+
+  .btn-close
+    padding: 10px
+    height: 40px
+    width: 40px
+    border: none
+    border-radius: 50%
+    background-color: $white
+    bottom: calc( 100vh - 90vh )
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+    
+    i
+      font-size: 18px
 
   .btn
     background-color: $white
@@ -78,6 +95,7 @@ $soft-red: #ff6961
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
     touch-action: none
     user-select: none
+    transform: translate(236.028px, 74.9548px)
 
     .btn__strip
       font-size: 8px

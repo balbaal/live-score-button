@@ -54,7 +54,22 @@
   margin: 0 auto;
   background-color: #fafafa;
   height: 100vh;
-  padding: 10px; }
+  padding: 10px;
+  position: relative; }
+  .container .btn-close {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    bottom: calc( 100vh - 90vh);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); }
+    .container .btn-close i {
+      font-size: 18px; }
   .container .btn {
     background-color: #ffffff;
     padding: 15px 10px;
@@ -68,7 +83,8 @@
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     touch-action: none;
-    user-select: none; }
+    user-select: none;
+    transform: translate(236.028px, 74.9548px); }
     .container .btn .btn__strip {
       font-size: 8px; }
     .container .btn .btn__score {

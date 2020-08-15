@@ -1,6 +1,7 @@
-const position = { x: 0, y: 0 };
+const position = { x: 236.028, y: 74.9548 };
 let isMoved = false;
-
+let isMouseInsideCard = false;
+// style="transform: translate(236.028px, 74.9548px);"
 interact(".draggable").draggable({
   listeners: {
     move(event) {
@@ -16,10 +17,19 @@ interact(".draggable").draggable({
   },
 });
 
-$(".btn").click("touchstart touchend", function (e) {
+const toggleButton = () => {
+  $(".card").toggle();
+  $(".btn").toggle();
+  $(".btn-close").toggle();
+};
+
+$(".btn").click(function (e) {
   if (!isMoved) {
-    $(".card").toggle();
-    $(".btn").toggle();
+    toggleButton();
   }
   isMoved = false;
+});
+
+$(".btn-close").click(function () {
+  toggleButton();
 });
