@@ -2,7 +2,7 @@
 Just an idea come when watching EUFA Champion Leage: Barcelona VS Bayern Munich.
 Implement floating & draggable button.
 
-<img src="assets/live-score-button.gif" height="70%" />
+<img src="assets/live-score-button-2.png" height="60%" />
 
 ## Technologies
 Project is created with :
